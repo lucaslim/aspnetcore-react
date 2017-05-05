@@ -1,0 +1,10 @@
+body {
+  font-size: 14px;
+  background: #f9f9fa;
+  margin: 0 auto;
+}
+
+:local(.container) {
+  background: transparent;
+  padding-top: 1rem;
+}

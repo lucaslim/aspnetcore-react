@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "react",
+    "stage-0"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "transform-react-pure-class-to-function",
+        "transform-react-remove-prop-types",
+        "transform-react-inline-elements",
+        "transform-react-constant-elements"
+      ]
+    },
+    "test": {
+      "plugins": [
+        "transform-es2015-modules-commonjs"
+      ]
+    }
+  }
+}

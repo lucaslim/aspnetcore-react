@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    @Html.Raw(ViewData["Title"])
+    @Html.Raw(ViewData["Meta"])
+    @Html.Raw(ViewData["Link"])
+    <style>@Html.Raw(ViewData["CriticalCss"])</style>
+</head>
+<body>
+    <div id="root">@Html.Raw(ViewData["Html"])</div>
+    <script>window.INITIAL_STATE = @Html.Raw(ViewData["InitialState"])</script>
+    <%=htmlWebpackPlugin.files.webpackManifest%>
+</body>
+</html>
+
+
